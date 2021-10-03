@@ -43,6 +43,7 @@
 		CECC688127089CE100E5F25A /* Recipes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CECC687F27089CE100E5F25A /* Recipes.storyboard */; };
 		CECC68832708CA9500E5F25A /* JsonData.json in Resources */ = {isa = PBXBuildFile; fileRef = CECC68822708CA9500E5F25A /* JsonData.json */; };
 		CECC68852708CBCD00E5F25A /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC68842708CBCD00E5F25A /* UserPreferences.swift */; };
+		CECC68872709855500E5F25A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CECC68862709855500E5F25A /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +87,7 @@
 		CECC688027089CE100E5F25A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Recipes.storyboard; sourceTree = "<group>"; };
 		CECC68822708CA9500E5F25A /* JsonData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = JsonData.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
 		CECC68842708CBCD00E5F25A /* UserPreferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPreferences.swift; sourceTree = "<group>"; };
+		CECC68862709855500E5F25A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		CECC67F927086D5500E5F25A = {
 			isa = PBXGroup;
 			children = (
+				CECC68862709855500E5F25A /* README.md */,
 				CECC680427086D5600E5F25A /* MahmoudZinji */,
 				CECC680327086D5600E5F25A /* Products */,
 				DD5905DAE0FCEA6693FDD3FD /* Pods */,
@@ -371,6 +374,7 @@
 				CECC687A270895EF00E5F25A /* IngredientsTableViewCell.xib in Resources */,
 				CECC6876270895D500E5F25A /* DirectionsTableViewCell.xib in Resources */,
 				CECC680F27086D5800E5F25A /* Assets.xcassets in Resources */,
+				CECC68872709855500E5F25A /* README.md in Resources */,
 				CECC688127089CE100E5F25A /* Recipes.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

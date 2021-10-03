@@ -129,7 +129,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TVX-xk-nHp">
                                 <rect key="frame" x="0.0" y="150" width="414" height="150"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0fi-xQ-orb">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0fi-xQ-orb">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
                                     </imageView>
                                 </subviews>
@@ -159,6 +159,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="recipeImage" destination="0fi-xQ-orb" id="gOi-7v-anM"/>
                         <outlet property="recipeTitleLabel" destination="Xqm-sG-jKu" id="Pn5-M1-oiA"/>
                         <outlet property="tableView" destination="SL0-VV-jpV" id="WQs-Zz-i9E"/>
                     </connections>

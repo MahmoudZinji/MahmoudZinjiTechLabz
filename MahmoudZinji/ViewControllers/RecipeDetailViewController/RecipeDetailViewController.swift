@@ -4,16 +4,19 @@
 //
 //  Created by User on 02/10/2021.
 //
-
+//https://github.com/MahmoudZinji/MahmoudZinjiTechLabz
+//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
 
 import Foundation
 import UIKit
 import GoogleMobileAds
+import Kingfisher
 
 class RecipeDetailViewController: BaseViewController {
     
     // MARK: - IBOutlet Properties
     
+    @IBOutlet weak var recipeImage: UIImageView!
     @IBOutlet weak var recipeTitleLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
@@ -50,6 +53,19 @@ class RecipeDetailViewController: BaseViewController {
         )
         
         viewModel.recipe = recipe
+        if let recipeImage = recipe?.imageurl {
+            
+            let imagePath = recipeImage
+
+            let urlString = imagePath.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+            
+            let url = URL(string: urlString)
+            
+            self.recipeImage.kf.setImage(with: url)
+        }
+        if let recipeName = recipe?.name {
+            self.recipeTitleLabel.text = recipeName
+        }
         
         tableView.register(UINib(nibName: DirectionsTableViewCell.description(), bundle: nil), forCellReuseIdentifier: DirectionsTableViewCell.description())
         
@@ -143,5 +159,6 @@ extension RecipeDetailViewController: GADFullScreenContentDelegate {
     /// Tells the delegate that the ad dismissed full screen content.
     func adDidDismissFullScreenContent(_ ad: GADFullScreenPresentingAd) {
         print("Ad did dismiss full screen content.")
+        self.navigationController?.popViewController()
     }
 }
